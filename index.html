@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .div1 {
+        width: 200px;
+        height: 100px;
+        border: 1px solid red;
+        
+    }
+    .text1 {
+        display: inline;
+        vertical-align: middle;
+        margin: 0;
+    }
+    .text2 {
+        display: inline;
+        vertical-align: top;
+        margin: 0;
+    }
+    .layout-auto {
+        table-layout: auto;
+    }
+    .layout-fixed {
+        table-layout: fixed;
+    }
+    /*.content {
+        box-sizing: border-box;
+        min-height: calc(100vh - 80px);
+    }
+    .footer {
+        height: 80px;
+        padding: 15px;
+        background: #333;
+        color: #bfbfbf;
+        box-sizing: border-box;
+    }*/
+    .cont {
+        position: relative;
+        border: 1px solid red;
+        height: 300px;
+        width: 500px;
+    }
+    .cont:before {
+        content: "";
+        height: 100%;
+        width: 1px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .overf {
+
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="div1">
+    p<span>x</span>
+        <p class="text1">spx</p>
+        <p class="text2">jt</p>
+    </div> -->
+    <!-- <table cellpadding="0" cellspacing="0" border="1px" class="layout-fixed">
+        <tr>
+            <td>aaaa</td>
+            <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td>aaaaaaaa</td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="1px" class="layout-fixed" width="100%">
+        <tr>
+            <td>aaaaa</td>
+            <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td>aaaaaa</td>
+            <td width="900px"></td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="1px" class="layout-auto" width="100%">
+        <tr>
+            <td>aaaaa</td>
+            <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+            <td>aaaaaa</td>
+            <td width="900px"></td>
+        </tr>
+    </table> -->
+    <!-- <div class="content">333</div>
+    <div class="footer">33</div> -->
+    <!-- <div class="cont">
+        <div class="obj">rrrr <br /> dddd <br /> rrrrrrrrrrrrrr</div>
+    </div></body> -->
+    <table class="layout-fixed" width="100px">
+    <tr>
+    <td class="overf">
+        rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrr 
+        rrrrrrrrrrrr r rrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrr
+    </td>
+    </tr>
+    </table>
+</html>
